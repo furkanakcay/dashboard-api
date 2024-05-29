@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping(ControllerConstants.API_PREFIX + "/**")  // Adjust the mapping to match your API endpoints
+        registry.addMapping(ControllerConstants.API_PREFIX + "/**")
                 .allowedOrigins("http://localhost:3000")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
